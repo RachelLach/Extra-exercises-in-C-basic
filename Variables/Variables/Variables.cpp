@@ -12,14 +12,21 @@ int main()
 // I tried to delet the value of file_size and then print it.
 // I got an error that i should have initialize it 
 // then I used a suggestion here telling use {}
-// I did and the error is gone but when i run the program i got a result 0
+// I did and the error is gone but when i run the program i got a result 0.
 
 // Here is why: 
 // a feature of C++ called default initialization. When I declare a variable 
 // without explicitly initializing it with a value, its initial value is 
-// indeterminate. In most cases, it will contain garbage or an arbitrary value.
+// indeterminate. In most cases, it will contain garbage
+// (the data is currently in in memory) or an arbitrary value -> 
+// (refers to a value that is chosen seemingly randomly or without any specific reason).
 
 
 // When I print file_size -> 
 // using std::cout, I'm essentially printing whatever value happened 
-// to be in that memory location at the time.
+// to be in that memory location at the time.I could also get a random value.
+
+
+// I can also initialize multiple variable on the same line by divide them 
+// with a comma (,)
+// but better not to do it 
