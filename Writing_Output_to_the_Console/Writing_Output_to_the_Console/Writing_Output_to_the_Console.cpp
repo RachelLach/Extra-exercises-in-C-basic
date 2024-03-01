@@ -1,36 +1,26 @@
 #include <iostream>
 
+using namespace std; // define std anywhere here 
 int main()
 {
-    int x = 10; 
-    // x = 10 in terminal 
-    int y = 20; 
+    double total_sales = 95000;
+    cout << "total_sales = $" << total_sales << endl;
 
-    std::cout << "x = " << x << std::endl; // The same as comment down 
-    // std = Standard Output Stream 
+    double state_tax = (4*95000)/100; // total_sales * .04
+    cout << "state_tax = $" << state_tax << endl;
 
-    /* After = do not write anything -> 
-    to get the actual value of x */
-    
+    double county_tax = (2*95000)/100; // total_sales * .02
+    cout << "county_tax = $" << county_tax << endl;
 
-    /* OBS: need to write both std to get what i want in console
-    std::cout << "x = "; 
-    std::cout << x;
-    */ 
+    double total_taxes = state_tax + county_tax;
+    cout << "total_taxes= $" << total_taxes;
 
-    std::cout << "y = " << y;
-    /* By printing just std::cout << "y = " << y; ->
-     I got one line of x and y values -> To solve the problem -> 
-     i continue to write endl just for first line on top */
+    return 0; 
 }
-
-
-/*In programming : 
-* Stream means sequence of characters 
-* Standard Output is Console or terminal window 
+    
+/* Exercise: I have a store and I made 95000$. Now as a part of my tax return 
+* I have to pay state and county tax at different rates. (state Tax = 4%) and
+* (County tax = 2%). Now I should write a code that show my total sales 
+* as well as state tax and county tax and total tax 
+* i have to pay for this income. 
 */
-
-//<< called Stream Insertion Operato
-
-// "" is string 
-
