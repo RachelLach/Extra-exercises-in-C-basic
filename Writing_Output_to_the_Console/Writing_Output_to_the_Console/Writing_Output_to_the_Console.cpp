@@ -4,9 +4,9 @@ int main()
 {
     int x = 10; 
     // x = 10 in terminal 
+    int y = 20; 
 
-
-    std::cout << "x = " << x; // The same as comment down 
+    std::cout << "x = " << x << std::endl; // The same as comment down 
     // std = Standard Output Stream 
 
     /* After = do not write anything -> 
@@ -17,7 +17,13 @@ int main()
     std::cout << "x = "; 
     std::cout << x;
     */ 
+
+    std::cout << "y = " << y;
+    /* By printing just std::cout << "y = " << y; ->
+     I got one line of x and y values -> To solve the problem -> 
+     i continue to write endl just for first line on top */
 }
+
 
 /*In programming : 
 * Stream means sequence of characters 
