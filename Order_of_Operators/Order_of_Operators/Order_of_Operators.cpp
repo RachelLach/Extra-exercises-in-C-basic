@@ -2,14 +2,19 @@
 
 int main()
 {
+    /*Mathematical expression and implement in c++
     
-    double x = 1 + 2 * 3; // 7
+    z = x + 10/3y
+    
+    */ 
 
-    // here inside () is 3 and then multiply with 3 
-    double y = (1 + 2) * 3; // 9 
-    std::cout << x;
+    double x = 10;
+    double y = 5; 
+    double z = (x + 10)/ (3 * y);
+    /* () for x + 10 is numerator 
+    () for 3*y is denominator 
+    */
+
+    std::cout << z;
     return 0;
 }
-
-// In programmin: first * or / and then + or - 
-// but we can change the order by using ()
