@@ -2,19 +2,18 @@
 
 int main() {
 	int x = 10; 
-	int y = 3; 
-	int z = x % y; // + is addition operator, x+y is operands 
 
-	std::cout << z;
+	x = x + 1; // Add 1 to x -> x =x + 1; or better way write it like down 
+
+	x++; // increment oprator as post fix 
+	x--; // decrement oprator as post fix
+	++x; // as prefix 
+	--x; // as prefix 
+
+	std::cout << x;
 
 	return 0; 
 
 }
 
-
-
-// -> % called modulus which returns the remainder of a division 
-// int x = 10; 
-// int y = 3;
-// int z = x % y; -> the result is 1 
-
+// Increment and decrement operators 
