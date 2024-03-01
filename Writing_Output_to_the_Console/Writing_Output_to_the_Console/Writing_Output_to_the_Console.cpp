@@ -6,15 +6,17 @@ int main()
     // x = 10 in terminal 
 
 
-    std::cout << "x = "; 
+    std::cout << "x = " << x; // The same as comment down 
     // std = Standard Output Stream 
 
     /* After = do not write anything -> 
     to get the actual value of x */
     
-    std::cout << x;
 
-    // OBS: need to write both std to get what i want in console
+    /* OBS: need to write both std to get what i want in console
+    std::cout << "x = "; 
+    std::cout << x;
+    */ 
 }
 
 /*In programming : 
