@@ -6,10 +6,12 @@ int main()
     double total_sales = 95000;
     cout << "total_sales = $" << total_sales << endl;
 
-    double state_tax = (4*95000)/100; // total_sales * .04
+    const double state_tax_rate = .04; 
+    double state_tax = total_sales * state_tax_rate;// (4*95000)/100; // total_sales * .04
     cout << "state_tax = $" << state_tax << endl;
 
-    double county_tax = (2*95000)/100; // total_sales * .02
+    const double county_tax_rate = .02;
+    double county_tax = total_sales * county_tax_rate;//(2*95000)/100; // total_sales * .02
     cout << "county_tax = $" << county_tax << endl;
 
     double total_taxes = state_tax + county_tax;
@@ -23,4 +25,8 @@ int main()
 * (County tax = 2%). Now I should write a code that show my total sales 
 * as well as state tax and county tax and total tax 
 * i have to pay for this income. 
+*/
+
+/* OBS: store the magic value in another variable 
+* and then use it as a reference -> like line 9 and 10
 */
