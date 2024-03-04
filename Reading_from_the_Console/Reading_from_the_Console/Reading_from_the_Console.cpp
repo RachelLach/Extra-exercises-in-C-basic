@@ -11,9 +11,9 @@ int main()
     double y;
                    
 
-    cin >> x; // >> called stream extraction operator 
+    cin >> x >> y; // >> called stream extraction operator 
                   // read it and put it in this variable 
-    cin >> y;
+   
     cout << x + y;// to varify our program works 
     
     return 0;
