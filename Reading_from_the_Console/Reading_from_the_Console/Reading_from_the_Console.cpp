@@ -3,17 +3,19 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Enter a value: ";
+    std::cout << "Enter values for x and y: ";
 
     // Read the value (from console/standard input) and put it in a variable ->
     // But first we need to declare a variable 
-    double value; // declare an integer called value 
-                  // use . instead of , 
+    double x; // declare an integer called value - use . instead of ,
+    double y;
+                   
 
-    cin >> value; // >> called stream extraction operator 
+    cin >> x; // >> called stream extraction operator 
                   // read it and put it in this variable 
-
-    cout << value;// to varify our program works 
+    cin >> y;
+    cout << x + y;// to varify our program works 
+    
     return 0;
 
 }
