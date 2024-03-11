@@ -8,9 +8,9 @@ int main()
 {
     long elapsd_seconds = time(nullptr);// returns the current time -> nullptr is an argument 
     // returns a long value which is elapsed_seconds
-    srand(6); // s rand = seed rand 
+    srand(elapsd_seconds); // s rand = seed rand 
     int number = rand();
-    cout << elapsd_seconds;
+    cout << number;
     return 0;
 }
 
@@ -23,3 +23,5 @@ int main()
 
 /* There is a function for getting the current time in terms of the number of seconds elapsed from 
 january 1970. With this function everytime run the program -> get a different number */
+
+/*Now we generrate a random number and print it on the console*/
