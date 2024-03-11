@@ -1,18 +1,25 @@
 #include <iostream>
 #include <cstdlib> // for random number 
+#include <ctime> // file 
 
 using namespace std; 
 
 int main()
 {
+    long elapsd_seconds = time(nullptr);// returns the current time -> nullptr is an argument 
+    // returns a long value which is elapsed_seconds
+    srand(6); // s rand = seed rand 
     int number = rand();
-    cout << number;
+    cout << elapsd_seconds;
     return 0;
 }
 
-/* Call rand function -> rand() 
-   get a random integer -> int number = rand(); */
+/* Call rand function -> rand();  
+   and get a random integer and store it in number -> int number = rand(); */
 
 
 /* To get a random number everytime I run the program I need to seed the
-   random number generator with a different vaule */
+   random number generator with a different vaule */ 
+
+/* There is a function for getting the current time in terms of the number of seconds elapsed from 
+january 1970. With this function everytime run the program -> get a different number */
