@@ -4,11 +4,12 @@ using namespace std;
 
 int main() {
 
-    cout << sizeof(int); 
+    int number = numeric_limits<int>::max();
+    number++;
+    cout << number;
     return 0;
 }
 
 
-
-/* call this funtion and give it a datatype int -> return the number of bytes required to store an 
-   int on this machine */
+/* if a the value I want to store in a type is too large for that type -> 
+   it will wrap around to the types minimum. this is called overflowing  */
