@@ -7,22 +7,15 @@ using namespace std;
 int main()
 {
     
-    srand(time(nullptr)); // This function will return a value 
-                          // and that value gonna pass to this function as an argument 
-    int number = rand() % 10;
-    cout << number;
+    srand(time(0));
+    const short max_value = 6; 
+    const short min_value = 1;
+    short first_result = (rand() % (max_value - min_value + 1)) + min_value;
+    short second_result = (rand() % (max_value - min_value + 1)) + min_value;
+    cout << first_result << "," << second_result;
     return 0;
 }
 
-/* Call rand function -> rand();  
-   and get a random integer and store it in number -> int number = rand(); */
-
-
-/* To get a random number everytime I run the program I need to seed the
-   random number generator with a different vaule */ 
-
-/* There is a function for getting the current time in terms of the number of seconds elapsed from 
-january 1970. With this function everytime run the program -> get a different number */
-
-/*Now we generrate a random number and print it on the console*/
+/* Exercise: write a program for roling dice. Everytime run this program I should get two random values between 
+1-6 . To limit the range of random number using this formula: [rand() % (max_value - min_value + 1] + min value */
 
