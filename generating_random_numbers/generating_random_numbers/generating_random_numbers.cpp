@@ -6,11 +6,9 @@ using namespace std;
 
 int main()
 {
-    long elapsd_seconds = time(nullptr);// returns the current time -> nullptr is an argument 
-    // returns a long value which is elapsed_seconds
-    srand(elapsd_seconds); // s rand = seed rand 
-    // here when generating random number I can write modulus operator and specify an upper limit ->
-    // if write 10 -> will return the remainder of division 10 (numbers 0-9)
+    
+    srand(time(nullptr)); // This function will return a value 
+                          // and that value gonna pass to this function as an argument 
     int number = rand() % 10;
     cout << number;
     return 0;
@@ -28,4 +26,3 @@ january 1970. With this function everytime run the program -> get a different nu
 
 /*Now we generrate a random number and print it on the console*/
 
-/* */
