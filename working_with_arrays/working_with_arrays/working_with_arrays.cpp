@@ -1,16 +1,24 @@
 #include <iostream>
+#include<string>
 
 using namespace std; 
 
 int main()
 {
-    int numbers[] = {10, 20}; // initializing to a list of values
-    cout << numbers[1];
+    string names[3]; 
+
+    cout << " Name: "; 
+    getline(cin, names[0]);
+
+    cout << " Name: ";
+    getline(cin, names[1]);
+
+    cout << " Name: ";
+    getline(cin, names[2]);
+
+    cout << names[0];
 
     return 0;
 }
 
-
-/* if I have all the initial values, I don't need to provide a size
-   if I don't have all initial values and I want to reserve enogh space for storing all the elements -> 
-   then I have to specify a size here */
+/* exercise: Ask the user for 3 names. Store these names in an array and then print the first name. */
