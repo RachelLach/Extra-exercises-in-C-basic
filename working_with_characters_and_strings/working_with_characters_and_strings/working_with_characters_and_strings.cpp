@@ -2,13 +2,16 @@
 
 using namespace std;
 
-int main()
-{
-    string name = "Rachel Lachiani";
-    cout << name;
-    return 0;
+int main() {
+
+     string name;
+     cout << "Enter your name: ";
+     getline(cin, name);
+     cout << "Hello, " << name << "!" << endl;
+     return 0;
+
 }
 
-
-/* char -> for storing a single character */
-/* string -> for storing a sequence of characters */ 
+// this function defined in the std
+// give it two arguments(values) - first is input string that is cin and the second argument 
+// is the string variable which is name
