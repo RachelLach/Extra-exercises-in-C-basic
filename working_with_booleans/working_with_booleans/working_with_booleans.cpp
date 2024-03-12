@@ -10,5 +10,5 @@ int main() {
 }
 
 
-/* boolalpha -> sticky amnipulator -> give the bool value not as a number */
+/* boolalpha -> sticky amnipulator -> give the bool value not as a number but how I wrote in the code */
 /* noboolalpha -> turn it off */
