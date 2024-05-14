@@ -7,6 +7,15 @@ int main()
     // we don't know what is stored in x. 
     // So now we want to check to see if x is greater than 5. 
     int x = 10; // declare a variable and set it to 10
-    x > 5; // Comparison operators 
+    int y = 5; 
+    // this piece of code called -> a boolean expression -> produces a boolean value x != 5; 
+    //  So we can get the result and store it in a in a boolean variable called result. 
+
+    bool result = x != y; 
+
+    cout << boolalpha << result; 
     return 0; 
 }
+
+
+// An expression in programming is a piece of code that produces a value. 
