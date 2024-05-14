@@ -1,20 +1,12 @@
-// Comparison Operators.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // In this case we know the value of x , but x could hold a value that we read dynamically at runtime. In that case 
+    // we don't know what is stored in x. 
+    // So now we want to check to see if x is greater than 5. 
+    int x = 10; // declare a variable and set it to 10
+    x > 5; // Comparison operators 
+    return 0; 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
