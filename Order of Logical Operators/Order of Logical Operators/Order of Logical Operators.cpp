@@ -12,7 +12,7 @@ int main()
     bool a = true; 
     bool b = false; 
     bool c = false; 
-    bool result = b && !a; // evaluating !a first and then && b
+    bool result = a || b && c; 
     cout << boolalpha << result; 
     return 0;
 }
