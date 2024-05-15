@@ -9,10 +9,13 @@ int main()
     // !
     // &&
     // || 
-    bool a = true; 
-    bool b = false; 
-    bool c = false; 
-    bool result = (a || b ) && c; // With () first || and then && get evaluated 
-    cout << boolalpha << result; 
+    bool US_citizen = true;  
+    bool bachelor_degree = false; 
+    short years_of_experience = 3; 
+    bool is_eligible = US_citizen && (bachelor_degree || years_of_experience > 2); 
+    cout << boolalpha << is_eligible; 
     return 0;
 }
+
+// Exercise: A job applicant should be a US citizen and either have a bachelor degree or at least two 
+// years of work experience. 
