@@ -12,11 +12,10 @@ int main()
     bool ca_resident = true; 
     short tuition = 0; 
     // Outer if statement 
-    if (is_citizen) {
+    if (is_citizen) 
         // Inner if statement 
-        if (ca_resident) tuition = 0;
-        else tuition = 1000;
-    }
+        if (!ca_resident) tuition = 1000;
+    
     else tuition = 3000; 
     return 0; 
 }
