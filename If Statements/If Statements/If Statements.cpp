@@ -3,14 +3,14 @@ using namespace std;
 
 int main()
 {
-    int temperature = 30; 
-    if (temperature < 20)  // In () we have a condition or a  boolean expression 
-        // If the expression is true so we print : 
+    int temperature = 100; 
+    if (temperature < 60)   
         cout << "Cold!";
-    else if (temperature > 15)
+    else if (temperature < 90)
         cout << "Nice!";
+    else
+        cout << "Hot!"; 
     
     return 0; 
 }
 
-// For more than one if statement we should type a pair of braces after the if statement 
