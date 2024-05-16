@@ -3,12 +3,13 @@ using namespace std;
 
 int main()
 {
-    int temperature = 10; 
-    if (temperature < 15) {  // In () we have a condition or a  boolean expression 
+    int temperature = 30; 
+    if (temperature < 20)  // In () we have a condition or a  boolean expression 
         // If the expression is true so we print : 
-        cout << "Cold!"; 
-        cout << "Wear warm clothes!";
-    }
+        cout << "Cold!";
+    else if (temperature > 15)
+        cout << "Nice!";
+    
     return 0; 
 }
 
