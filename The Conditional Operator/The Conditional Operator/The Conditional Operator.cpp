@@ -8,11 +8,11 @@ int main()
     int second; 
     cin >> first >> second; 
     
-    int result; 
-    if (first > second)
+    int result = (first > second) ? first : second;
+    /*if (first > second) // if -> If statement under one condition we are setting the result to some value                  
         result = first;
-    else
-        result = second; 
+    else                  // else -> under another condition we are setting the result to another value
+        result = second;*/ 
 
     cout << result; 
     return 0; 
