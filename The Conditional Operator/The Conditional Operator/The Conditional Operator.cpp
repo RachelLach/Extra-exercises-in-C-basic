@@ -3,14 +3,19 @@ using namespace std;
 
 int main()
 {
-    int sales = 11'000; 
-    double commission = (sales > 10'000) ? .1 : .05; // in () we have a condition if true so set to .1 otherwise .05
-    /*if (sales > 10'000)
-        commission = .1;
+    cout << " Give me two numbers for, please!"; 
+    int first; 
+    int second; 
+    cin >> first >> second; 
+    
+    int result; 
+    if (first > second)
+        result = first;
     else
-        commission = .05;*/ 
-    cout << commission; 
+        result = second; 
+
+    cout << result; 
     return 0; 
 }
 
-// To simplify the if statements 
+// Exercise: Ask the user for two numbers. Store the larger value in a separate variable and print it. 
