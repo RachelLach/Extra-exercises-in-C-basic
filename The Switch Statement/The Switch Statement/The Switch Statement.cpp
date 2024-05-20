@@ -12,5 +12,12 @@ int main()
     short input; 
     cin >> input; // read the user's selected input 
 
+    if (input == 1)
+        cout << "You selected 1";
+    else if (input == 2)
+        cout << "You selected 2";
+    else
+        cout << "Goodbye!";
+
     return 0;
 }
