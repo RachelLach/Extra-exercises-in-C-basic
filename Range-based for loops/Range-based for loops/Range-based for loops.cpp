@@ -9,9 +9,23 @@ int main() {
     // sizeof(int) : 4                    // solution: function -> sizeof()-> if we pass our array here it will return
                                           // the number of bytes allocated by this array 
         cout << numbers[i] << endl;
+
+
+
+    // second implementation 
+    for (int number : numbers)            // in () we declare a loop variable -> this variable is going to hold one 
+        cout << number << endl;           // of the items in this array in each iteration 
+                                          // we are working with actual items or actual integers and not index
     return 0;
 }
 
+// by using the range base for loop we can also iterate over a string, because a string is a sequence 
+// or list of characters. 
 
-// Looping over a range or a list of values 
+
+
+
+
+// now: we have a list of items and we want to iterate or loop over them: that is called the range based for loop 
+
 
