@@ -3,10 +3,11 @@ using namespace std;
 
 int main()
 {
-    for (int i = 1;i <= 5; i++)
-        cout << i << endl;
-
-    return 0; 
+    int number = 0; 
+    while (number < 1 || number > 5)         // Continuously ask a user to enter a number between one to five 
+        cout << "Number: " << endl; 
+        cin >> number; 
+        if (number < 1 || number > 5)
+            cout << "Enter a number between 1 and 5!" << endl;
+        
 }
-
-// Like for loop we have also while loop that works the same but the code is going to look a little bit different. 
