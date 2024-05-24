@@ -12,7 +12,5 @@ int main()
             break; 
         cout << "Error! Enter a number between 1 and 5." << endl;
     }
-
-
     return 0;
 }
