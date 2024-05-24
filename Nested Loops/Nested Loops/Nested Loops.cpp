@@ -3,13 +3,20 @@ using namespace std;
 
 int main()
 {
-    for (int x = 1; x <= 5; x++) {
-        for (int y = 1; y <= 5; y++)
-            cout << "(" << x << "'" << y << ")" << endl;
+    // Exercise: Write a program and ask the user for the number of rows. 
+    cout << "Rows: "; 
+    int rows; 
+    cin >> rows; 
 
+    for (int i = 1; i <= rows; i++) {
+        //first iteration :  i = 1, j = 0, (1)
+        // second iteration : i = 2, j = ,0,1  (2)
+        for (int j = 0; j < i; j++) 
+            cout << "*"; 
+        cout << endl; 
     }
+
 
     return 0; 
 }
 
-// Nested loops for complex algorithms 
