@@ -21,8 +21,3 @@ int main() {
 // Exercise: Given a list of temperatures, write code to calculate the average temperature. 
 
 
-
-
-
-
-
