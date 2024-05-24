@@ -6,7 +6,9 @@ int main()
     for (int i = 1; i <= 5; i++) {
 
         // if i is divisible by 3 we don't want to print it on terminal -> use if statement 
-        if (i % 3 != 0)
+        if (i % 3 == 0) // if i is divisible by zero then we gonna continue to next iteration -> 
+                        // otherwise we print i in terminal 
+            continue; 
             cout << i << endl; 
     }
     return 0;
