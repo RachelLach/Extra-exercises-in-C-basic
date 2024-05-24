@@ -1,20 +1,23 @@
-// Break and Continue statements.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std; 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    for (int i = 1; i <= 5; i++) {
+
+        // if i is divisible by 3 we don't want to print it on terminal -> use if statement 
+        if (i % 3 != 0)
+            cout << i << endl; 
+    }
+    return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+// Loops in C++: 
+// For loops: when we know a head of time how many times we want to execute sth.
+// Range-base for loops: when we want to iterate or loop over a range of values like when we have an array or a string. 
+// While loops: when we do not know ahead of time how many times we want to repeat sth.
+// Do-while loops: like while loop 
+
+// Break statement: To break out of a loop 
+// Continue statement: To skip an iteration 
