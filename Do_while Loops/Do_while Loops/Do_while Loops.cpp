@@ -3,16 +3,15 @@ using namespace std;
 
 int main()
 {
-    /*while () {
-
-    }
-
+    // Ask a user to write a number between 1 and 5
+    int number;
     do {
+        cout << "Enter a number: " << endl; 
+        
+        cin >> number; 
 
-
-    } while (); */
+    } while (number < 1 || number > 5); 
     
     return 0; 
 }
 
-// A do_while loop gets executed at least once. Because the condition is evaluated after the loop is executed. 
