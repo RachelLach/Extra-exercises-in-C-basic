@@ -1,20 +1,28 @@
-// Defining and Calling Functions.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std; 
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// An example: 
+void greet() {
+    cout << "Hello World!";
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+int main()          // The type of return value of function -> here is an int 
+                    // But if a function doesn't return a value? -> then I need to use a void keyword 
+{                   // Then I type the name of the function -> here is main (should be proper and meningful)
+                    // Then I type () and inside of () I type 0 or more parameters for this function 
+                    // Then {} to define a block of code -> called the body of this function 
+                    // So with this way I defined a function that I can reuse in the program multiple times 
+                    // like the remore control :) 
+    return 0; 
+}
+
+
+
+// Several functions -> each responsible for a single task 
+// Until now I hade just a single function -> main function 
+ 
+
+
+
+
