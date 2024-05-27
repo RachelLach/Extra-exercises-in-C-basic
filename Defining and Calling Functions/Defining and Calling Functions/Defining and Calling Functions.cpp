@@ -14,7 +14,7 @@ int maximum (int first_number,int second_number) {
 
 int main() { 
    
-   int larger = (maximum(20, 20));
+   int larger = (maximum(2, 20));
    cout << larger << endl; 
 }
 
