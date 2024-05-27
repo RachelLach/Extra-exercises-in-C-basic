@@ -1,23 +1,21 @@
 #include <iostream>
 using namespace std; 
 
+// Exercise: Create a function that receives two integers and returns the maximum of the two.
+// Call that function and then print the result 
 
-void greet(string name) {
-    cout << "Hello " << name << endl;
-}
-
-// Now I reuse the full_name function to create a full name for a person and then I pass the full name to greet function 
-string full_name(string first_name,string last_name) {
-    // Concatination (combining)
-    return first_name + " " + last_name;
+int maximum (int first_number,int second_number) {
+    return (first_number > second_number) ? first_number : second_number; /* if (first_number > second_number)
+                                                                          return first_number;
+                                                                          else
+                                                                          return second_number;*/
 }
  
 
 int main() { 
    
-   string name = full_name("Rachel", "Lachiani");
-   greet(name);
-    
+   int larger = (maximum(20, 20));
+   cout << larger << endl; 
 }
 
 
