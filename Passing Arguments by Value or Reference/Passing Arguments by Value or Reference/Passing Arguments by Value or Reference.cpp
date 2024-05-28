@@ -1,20 +1,28 @@
-// Passing Arguments by Value or Reference.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std; 
+
+void increase_price(double price) {
+    // double price; -> explanation in the comments
+    price *= 1.2;             // Increasing the price by 20% ->  price = price * 1.2;
+}
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    double price = 100;
+    increase_price(price);
+    cout << price;
+    return 0; 
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+// When I run this code I get 100 and not the updated value: Here is why: 
+// When I call this function in main and pass the price in calling function, a copy of the value stored in this variable 
+// is taken (double price = 100;) and stored in this parameter (double price) on top. -> the parameters of a function 
+// are like local variables on that function. So this parameters is like having a variable called price in this function. 
+// double price; Also When I declare a variable, that variable is only accesseble with in the block in which is declared. 
+// So the price variable in increase_price function is completely independent of the other price variable in main function.
+// double price = 100;-> this variable is only accessible in main block. -> this is called the scope of a variable 
+// So I have two variables with same name but they have different scopes, They are essentially in two different locations 
+// in memory -> so when calling the increase_price function in main, a copy of the value stored in this variable is taken,
+// and stored in this other location in memory (double price) on top. 
