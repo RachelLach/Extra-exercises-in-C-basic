@@ -1,20 +1,27 @@
-// Local vs Global Variables.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std; 
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// Global variables -> declare outside of all functions -> accessible by all functions
+// Global variable (global scope) -> accessible by all functions 
+double tax_rate = .2; 
+
+// If i define a function for calculating the tax, I do not need to pass this variable from the top as an argument 
+// to this function. So this function only need to take the sales some 
+// and it doesn't need the second parameter like tax rate because in this function we can access a local variable 
+double calculate_tax(int sales) {
+    return sales * tax_rate;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+// Global variables can lead to programming problems, because different functions can change them and it is hard to track 
+// how they get changed!
+// Variables are accessible within the block in which are declared. 
+int main(){
+    int sales = 10'000;     // Only accessible in this block -> local variable (local scope) -> local to this function 
+                            // invisibles to other functions 
+    double tax = calculate_tax(sales);
+    cout << tax;
+    return 0;
+}
+// When we mostly use global variables: 
+// 1.singelton design pattern 
+// 2.global constans : const double tax_rate = .2;
