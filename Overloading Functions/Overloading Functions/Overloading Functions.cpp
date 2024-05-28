@@ -5,17 +5,20 @@ void greet(string name) {
     cout << "Hello " << name; 
 }
 
-// This second version can have any number and type of parameters 
-void greet(string title, string name) {  // These parameters are completely independent of each other 
+// A concept -> Function signature: consist of the name of the function + (number and type of parameters)
+// The name these parameters doesn't matter 
+// When overloading functions, each function or each overloaded should have a unique signature. 
+// -> here I can not have two greet functions that both have two string parameters -> if I do wrong I get an error 
+void greet(string title, string name) {   
     cout << "Hello " << title << " " << name; 
 
 }
 
 
 int main(){
-    greet("Ms", "Rachel"); // Two coices here -> then call it and pass it 
+    greet("Ms", "Rachel"); 
     return 0;
 }
 
 
-// Overloading Functions: sometimes I need to create functions with the same name but different parameters.  
+  
