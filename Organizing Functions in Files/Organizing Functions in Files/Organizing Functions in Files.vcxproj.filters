@@ -18,5 +18,13 @@
     <ClCompile Include="Organizing Functions in Files.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="greet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="greet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
