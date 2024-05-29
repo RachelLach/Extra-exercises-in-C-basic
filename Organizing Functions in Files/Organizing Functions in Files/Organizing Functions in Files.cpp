@@ -2,22 +2,22 @@
 #include "greet.hpp"
 
 using namespace std; 
+using messaging::greet;
 
-// When programs get more complex, then the main function becomes larger and harder to read, so I don't want to write 
-// all the code here and instead, I want to divide the project into different files, each serving a purpose.
-// How to take a function outside of this file and put it into a separate file. 
-// The benefits: 1. It is going to make this file a little bit smaller and easier to maintain, 
-// 2. Once I have this functionality, in a separate file, then I can reuse that file in different projects  
-// How to do it: 
-// project window -> right click -> choose add -> then class 
-// The I need to add two files: one for header and it is where I am going add function declararion 
-// The other file is called an implementation file and that's where I am going to add the function definition 
-// So now I take the greet function definition and move it to greet.cpp file 
-// I also need to include files from my project -> cpp and hpp
+/* When I use a namespace in .hpp and .cpp I get a compilation error because the compiler  
+* can not find the greet function. 
+* solution: 1. prefix the function with the namespace : messaging::greet("Rachel"); 
+* whit this way i can see all the functions defined in this namespace :)
+* 2. option is to import the messaging namespace on the top, exactly the same way like std namespace.
+* why? because if I have several calls to the greet function like messaging::greet("Rachel");
+* then the code doesn't look good! if I write a namespace like this: using namespace messaging; on top 
+* then i do not need to repeat calling with messaging:: in main. But there is a problem: 
+* if i include multiple namespaces on the top then game conflicts can appear again :( 
+* solution: in such cases instead of bringing the entire namespace, I can bring in specific functions in that namespace. 
+* so instead of using namespace messaging; I can write: using messaging::greet;
+* only importing this function from this namespace.
 
-// Problem: If I include this file in different files (#include "greet.hpp"), then I get a problem -> 
-// to solve this issue: go to header file -> the explanation is there
-
+  */
 int main()
 {
     greet("Rachel");
