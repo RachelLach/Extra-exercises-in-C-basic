@@ -1,20 +1,12 @@
-// Organizing Functions in Files.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std; 
 
+// When programs get more complex, then the main function becomes larger and harder to read, so I don't want to write 
+// all the code here and instead, I want to divide the project into different files, each serving a purpose.
+// How to take a function outside of this file and put it into a separate file. 
+// The benefits: 1. It is going to make this file a little bit smaller and easier to maintain, 
+// 2. Once I have this functionality, in a separate file, then I can reuse that file in different projects  
 int main()
 {
-    std::cout << "Hello World!\n";
+    return 0; 
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
