@@ -14,6 +14,10 @@ using namespace std;
 // The other file is called an implementation file and that's where I am going to add the function definition 
 // So now I take the greet function definition and move it to greet.cpp file 
 // I also need to include files from my project -> cpp and hpp
+
+// Problem: If I include this file in different files (#include "greet.hpp"), then I get a problem -> 
+// to solve this issue: go to header file -> the explanation is there
+
 int main()
 {
     greet("Rachel");
